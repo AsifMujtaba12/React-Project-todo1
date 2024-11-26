@@ -1,0 +1,161 @@
+/* Todo.css */
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the todo app in the middle of the page */
+.todo-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style the heading */
+.todo-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the date and time */
+.date-time {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #666;
+  font-weight: bold;
+}
+
+/* Flexbox for form elements */
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style the input field */
+.todo-input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 1em;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.todo-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Style the add button */
+.todo-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  margin-left: 10px;
+}
+
+.todo-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f8a);
+  transform: scale(1.05);
+}
+
+/* Style for unordered list */
+.myunorderlist {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for each todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  text-align: start;
+  text-transform: capitalize;
+
+}
+.checklist{
+  text-decoration: line-through;
+
+}
+.notchecklist{
+  text-decoration: none;
+}
+.todo-item span {
+  flex-grow: 1;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Style for check button */
+.check-btn {
+  background: none;
+  border: none;
+  color: green;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+  margin-right: 10px;
+}
+
+.check-btn:hover {
+  color: darkgreen;
+  transform: scale(1.2);
+}
+
+/* Style for delete button */
+.delete-butn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.delete-butn:hover {
+  color: darkred;
+  transform: scale(1.2);
+}
+
+/* Style for clear all button */
+.clear-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background: linear-gradient(135deg, #ff4d4d, #cc0000);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.clear-btn:hover {
+  background: linear-gradient(135deg, #cc0000, #990000);
+  transform: scale(1.05);
+}
